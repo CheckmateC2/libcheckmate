@@ -1,4 +1,3 @@
-
 /*
  * MIT License
  *
@@ -26,7 +25,7 @@
 #define CHECKMATE_SCOPE 648
 
 #include "c2.h"
-#inclide "tlv.h"
+#include "tlv.h"
 
 static c2_api_call_t *checkmate_elevate(tlv_transport_pkt_t tlv_transport_packet)
 {
