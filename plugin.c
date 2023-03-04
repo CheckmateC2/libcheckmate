@@ -28,7 +28,12 @@
 #include "c2.h"
 #inclide "tlv.h"
 
+static c2_api_call_t *checkmate_elevate(tlv_transport_pkt_t tlv_transport_packet)
+{
+    return craft_c2_api_call_pkt(tlv_transport_packet, API_CALL_SUCCESS, "");
+}
+
 void register_checkmate_api_calls(c2_api_calls_t **c2_api_calls_table)
 {
-    NULL;
+    c2_register_api_call(c2_api_calls_table, 1, checkmate_elevate, CHECKMATE_SCOPE);
 }
